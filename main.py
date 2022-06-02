@@ -17,7 +17,7 @@ def parse_text_from_image(message):
     with open(temp_file_name, 'wb') as new_file:
         new_file.write(downloaded_file)
 
-    custom_config = r'--oem 1 --psm 1'
+    custom_config = r'--oem 3 --psm 1'
     img = Image.open(temp_file_name)
 
 
