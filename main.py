@@ -6,7 +6,7 @@ import os
 import telebot
 bot = telebot.TeleBot(token, parse_mode=None)
 
-pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
+# pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
 
 def parse_text_from_image(message):
 
