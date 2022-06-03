@@ -34,8 +34,8 @@ def parse_text_from_image(message):
     os.remove(temp_file_name)
 
     bot.send_message(message.chat.id, f"Готово! Ваш текст:\n")
-    bot.send_message(message.chat.id, f"{text_image_new}")
-    # bot.send_message(message.chat.id, f"{TextBlob(text_image_new).correct()}")
+    # bot.send_message(message.chat.id, f"{text_image_new}")
+    bot.send_message(message.chat.id, f"{TextBlob(text_image_new).correct()}")
 
 
 @bot.message_handler(content_types=['document'])
